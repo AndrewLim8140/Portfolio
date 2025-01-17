@@ -6,7 +6,8 @@ An aspiring software developer striving to be a game developer , hailing from Si
 
 ## Past Projects :
 
-1. [Nitro King](https://github.com/VincentThendean/CP3408-Assignment2-Racing-Game.git) - a singleplayer Mario Kart inspired game based in a modern cityskyline
+1. [Nitro King](https://github.com/VincentThendean/CP3408-Assignment2-Racing-Game.git) - a singleplayer Mario Kart inspired game created using unity , based in a modern cityskyline
+2. [A Galaga Inspired Game](https://github.com/id8lab/scrum-project-tr2-2024-grp3) - a partially completed galaga inspired gamed created using pygames , was originally for a team project but due to unforseen circumstances became a solo project
    
 
 ## Created Assets
