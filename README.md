@@ -2,7 +2,7 @@
 
 An aspiring software developer striving to be a game developer , hailing from Singapore , with an key interest in various genres of games since young.
 
-- Well-experiened in Unity Engine and Blender
+- Adequate knowledge in Unity Engine and Blender
 
 ## Past Projects :
 
