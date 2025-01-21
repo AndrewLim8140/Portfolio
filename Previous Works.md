@@ -45,14 +45,55 @@ Planning and Segmentation of Districts :
 
 Audio Track Implementation :
 
-> Creating and adding Audio Tracks ( BGM & SFX ) to Projects
+> Creating and adding audio tracks ( BGM & SFX ) to Projects
 
 <p align="center">
    <img src="/Images/audio_loop.png" alt="Script that handles Looping BGM" title="Script for BGM loops" />
    <img src="/Images/Audio_Cube.png" alt="Added object that holds audio related scripts" title="Houses Audio Scripts" />
 </p>
 
-Miscellaneous :
+Miscellaneous Changes:
 
-> Other Miscellaneous 
+<p align="center">
+   <ol>
+      <li> Added headlights to vehicles to illumate path ahead 
+         <img src="Images/headlamps.png" alt="Headlight for vehicles" title="Vehicles Headlight" /> </li>
+      <li> Added invisible barrier to prevent out of bounds [ Is currently bright pink, but will be unrendered upon runtime ]
+         <img src="Images/map_invis1.png" alt="Invisible walls around circuit" title="Invisible walls around circuit" /> 
+         <img src="Images/map_invis2.png" alt="More invisible walls" title="Adding more invisible walls" /> </li>
+      <li> Added powerup sprites
+         <img src="Images/spawn_pwrup.png" alt="Added powerup sprite to spawner" title="Spawner Sprites" /> </li>
+   </ol>    
+</p>
+
+Final Circuit on Runtime:
+
+<p align="center">
+   <img src="Images/NitroKing_overview.png" alt="Overview of NitroKing" title="Overview of Circuit" />
+</p>
+
+# Galaga-inspired Game
+
+__Framework :__ `PyGame`
+
+__Additional Resources/Libraries :__ `pygame_starter`
+
+__Descriptions :__ A multiplayer Galaga inspired game
+
+---
+
+Created Sprites :
+
+> Created spites and complied into spritesheets
+
+<p align="center">
+   <img src="Images/jellyfish.png" alt="Enemy Jellyfish and its sprites" title="Enemy jellyfish spritesheet" /> <br>
+   <img src="Images/ship.png" alt="Enemy ship and its sprites" title="Enemy ship spritesheet" /> <br>
+   <img src="Images/p1.png" alt="Player 1 and its respective animations" title="Player 1 spritesheet" /> <br>
+   <img src="Images/p2.png" alt="Player 2 and its respective animations" title="Player 2 spritesheet" /> <br> 
+   <img src="Images/projectile.png" alt="Projectiles Spritesheet used by both players and enemies" title="Projectiles spritesheet" /> <br>
+   <img src="Images/LifeBar.png" alt="Player's and Boss Lifebar" title="Life Bar spritesheet" /> <br>
+   <img src="Images/pwr_up.png" alt="Powerup Spritesheet" title="Powerup spritesheet" />
+</p>
+
 
