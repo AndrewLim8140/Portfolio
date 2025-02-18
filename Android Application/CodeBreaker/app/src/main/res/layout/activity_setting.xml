@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/mainmenu_bg">
+
+        <Button
+            android:id="@+id/setting_clear"
+            style="@style/mainmenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:fontFamily="@font/bowlby_one_sc"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/clear_highscore"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/setting_back"
+            style="@style/mainmenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bowlby_one_sc"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/back"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/setting_clear"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="@+id/setting_clear"
+            app:layout_constraintTop_toBottomOf="@+id/setting_clear"
+            app:layout_constraintVertical_bias="0.108" />
+
+        <TextView
+            android:id="@+id/setting_header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bowlby_one_sc"
+            android:text="@string/settings"
+            android:textAlignment="center"
+            android:textColor="#8A2828"
+            android:textSize="60sp"
+            app:layout_constraintBottom_toTopOf="@+id/setting_clear"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.785" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

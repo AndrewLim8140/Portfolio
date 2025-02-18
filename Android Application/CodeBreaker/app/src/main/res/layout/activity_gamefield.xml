@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainmenu_bg">
+
+    <!--region Inputs-->
+    <TextView
+        android:id="@+id/game_title"
+        android:layout_width="394dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/francois_one"
+        android:text="@string/guess_the_combination"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+    <Button
+        android:id="@+id/gameplay_button_red"
+        style="@style/gameplay_red"
+        android:layout_width="57sp"
+        android:layout_height="57dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="208dp"
+        android:layout_marginBottom="76dp"
+        android:text="@string/r"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gameplay_display_r3_c1"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/gameplay_button_green"
+            style="@style/gameplay_green"
+            android:layout_width="57sp"
+            android:layout_height="57sp"
+            android:layout_marginStart="10dp"
+            android:text="@string/g"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="@+id/gameplay_button_red"
+            app:layout_constraintStart_toEndOf="@+id/gameplay_button_red" />
+
+        <Button
+            android:id="@+id/gameplay_button_blue"
+            style="@style/gameplay_blue"
+            android:layout_width="57sp"
+            android:layout_height="57sp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/b"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="@+id/gameplay_button_yellow"
+            app:layout_constraintEnd_toStartOf="@+id/gameplay_button_yellow" />
+
+        <Button
+            android:id="@+id/gameplay_button_yellow"
+            style="@style/gameplay_yellow"
+            android:layout_width="57sp"
+            android:layout_height="57sp"
+            android:layout_marginEnd="108dp"
+            android:layout_marginBottom="76dp"
+            android:text="@string/y"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/gameplay_button_grey"
+        style="@style/gameplay_grey"
+        android:layout_width="67sp"
+        android:layout_height="57sp"
+        android:layout_marginStart="10dp"
+        android:text="@string/del"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/gameplay_button_yellow"
+        app:layout_constraintStart_toEndOf="@+id/gameplay_button_yellow"
+        tools:ignore="TextContrastCheck" />
+    <!--endregion Inputs-->
+
+    <!--region Row1-->
+
+        <!--region Displays-->
+    <Button
+        android:id="@+id/gameplay_display_r1_c1"
+        style="@style/gameplay_grey"
+        android:layout_width="25sp"
+        android:layout_height="50sp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="528dp"
+        android:enabled="false"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_title"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/gameplay_display_r1_c2"
+                style="@style/gameplay_grey"
+                android:layout_width="25sp"
+                android:layout_height="50sp"
+                android:layout_marginStart="50dp"
+                android:enabled="false"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/gameplay_display_r1_c1"
+                app:layout_constraintStart_toEndOf="@+id/gameplay_display_r1_c1"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+
+            <Button
+                android:id="@+id/gameplay_display_r1_c3"
+                style="@style/gameplay_grey"
+                android:layout_width="25sp"
+                android:layout_height="50sp"
+                android:layout_marginStart="50dp"
+                android:enabled="false"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/gameplay_display_r1_c2"
+                app:layout_constraintStart_toEndOf="@+id/gameplay_display_r1_c2"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/gameplay_display_r1_c4"
+                style="@style/gameplay_grey"
+                android:layout_width="25sp"
+                android:layout_height="50sp"
+                android:layout_marginStart="50dp"
+                android:enabled="false"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/gameplay_display_r1_c3"
+                app:layout_constraintStart_toEndOf="@+id/gameplay_display_r1_c3"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/gameplay_display_r1_c5"
+                style="@style/gameplay_grey"
+                android:layout_width="25sp"
+                android:layout_height="50sp"
+                android:layout_marginStart="50dp"
+                android:enabled="false"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/gameplay_display_r1_c4"
+                app:layout_constraintStart_toEndOf="@+id/gameplay_display_r1_c4"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        <!--endregion Displays-->
+
+        <!--region Checks-->
+            <Button
+                android:id="@+id/gameplay_check_r1_c1"
+                style="@style/gameplay_grey"
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:enabled="false"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/gameplay_display_r1_c1"
+                app:layout_constraintStart_toEndOf="@+id/gameplay_display_r1_c1"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/gameplay_check_r1_c2"
+                style="@style/gameplay_grey"
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:enabled="false"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/gameplay_display_r1_c2"
+                app:layout_constraintStart_toEndOf="@+id/gameplay_display_r1_c2"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/gameplay_check_r1_c3"
+                style="@style/gameplay_grey"
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:enabled="false"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/gameplay_display_r1_c3"
+                app:layout_constraintStart_toEndOf="@+id/gameplay_display_r1_c3"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/gameplay_check_r1_c4"
+                style="@style/gameplay_grey"
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:enabled="false"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/gameplay_display_r1_c4"
+                app:layout_constraintStart_toEndOf="@+id/gameplay_display_r1_c4"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/gameplay_check_r1_c5"
+                style="@style/gameplay_grey"
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:enabled="false"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/gameplay_display_r1_c5"
+                app:layout_constraintStart_toEndOf="@+id/gameplay_display_r1_c5"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        <!--endregion Checks-->
+
+    <!--endregion Row1-->
+
+    <!--region Row2-->
+
+        <!--region Displays-->
+            <Button
+                android:id="@+id/gameplay_display_r2_c1"
+                style="@style/gameplay_grey"
+                android:layout_width="25sp"
+                android:layout_height="50sp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="448dp"
+                android:enabled="false"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gameplay_display_r1_c1"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+
+
+            <Button
+                android:id="@+id/gameplay_display_r2_c2"
+                style="@style/gameplay_grey"
+                android:layout_width="25sp"
+                android:layout_height="50sp"
+                android:layout_marginStart="50dp"
+                android:enabled="false"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/gameplay_display_r2_c1"
+                app:layout_constraintStart_toEndOf="@+id/gameplay_display_r2_c1"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/gameplay_display_r2_c3"
+                style="@style/gameplay_grey"
+                android:layout_width="25sp"
+                android:layout_height="50sp"
+                android:layout_marginStart="50dp"
+                android:enabled="false"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/gameplay_display_r2_c2"
+                app:layout_constraintStart_toEndOf="@+id/gameplay_display_r2_c2"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/gameplay_display_r2_c4"
+                style="@style/gameplay_grey"
+                android:layout_width="25sp"
+                android:layout_height="50sp"
+                android:layout_marginStart="50dp"
+                android:enabled="false"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/gameplay_display_r2_c3"
+                app:layout_constraintStart_toEndOf="@+id/gameplay_display_r2_c3"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/gameplay_display_r2_c5"
+                style="@style/gameplay_grey"
+                android:layout_width="25sp"
+                android:layout_height="50sp"
+                android:layout_marginStart="50dp"
+                android:enabled="false"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/gameplay_display_r2_c4"
+                app:layout_constraintStart_toEndOf="@+id/gameplay_display_r2_c4"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        <!--endregion Displays-->
+
+        <!--region Checks-->
+            <Button
+                android:id="@+id/gameplay_check_r2_c1"
+                style="@style/gameplay_grey"
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:enabled="false"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/gameplay_display_r2_c1"
+                app:layout_constraintStart_toEndOf="@+id/gameplay_display_r2_c1"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+
+
+            <Button
+                android:id="@+id/gameplay_check_r2_c2"
+                style="@style/gameplay_grey"
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:enabled="false"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/gameplay_display_r2_c2"
+                app:layout_constraintStart_toEndOf="@+id/gameplay_display_r2_c2"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/gameplay_check_r2_c3"
+                style="@style/gameplay_grey"
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:enabled="false"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/gameplay_display_r2_c3"
+                app:layout_constraintStart_toEndOf="@+id/gameplay_display_r2_c3"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/gameplay_check_r2_c4"
+                style="@style/gameplay_grey"
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:enabled="false"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/gameplay_display_r2_c4"
+                app:layout_constraintStart_toEndOf="@+id/gameplay_display_r2_c4"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/gameplay_check_r2_c5"
+                style="@style/gameplay_grey"
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:enabled="false"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/gameplay_display_r2_c5"
+                app:layout_constraintStart_toEndOf="@+id/gameplay_display_r2_c5"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        <!--endregion Checks-->
+
+    <!--endregion Row2-->
+
+    <!--region Row3-->
+
+        <!--region Displays-->
+            <Button
+                android:id="@+id/gameplay_display_r3_c1"
+                style="@style/gameplay_grey"
+                android:layout_width="25sp"
+                android:layout_height="50sp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="348dp"
+                android:enabled="false"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gameplay_display_r2_c1"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/gameplay_display_r4_c1"
+        style="@style/gameplay_grey"
+        android:layout_width="25sp"
+        android:layout_height="50sp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="260dp"
+        android:enabled="false"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gameplay_display_r3_c1"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/gameplay_display_r4_c2"
+        style="@style/gameplay_grey"
+        android:layout_width="25sp"
+        android:layout_height="50sp"
+        android:layout_marginStart="50dp"
+        android:enabled="false"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/gameplay_display_r4_c1"
+        app:layout_constraintStart_toEndOf="@+id/gameplay_display_r4_c1"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/gameplay_display_r4_c3"
+        style="@style/gameplay_grey"
+        android:layout_width="25sp"
+        android:layout_height="50sp"
+        android:layout_marginStart="50dp"
+        android:enabled="false"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/gameplay_display_r4_c2"
+        app:layout_constraintStart_toEndOf="@+id/gameplay_display_r4_c2"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/gameplay_display_r4_c4"
+        style="@style/gameplay_grey"
+        android:layout_width="25sp"
+        android:layout_height="50sp"
+        android:layout_marginStart="50dp"
+        android:enabled="false"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/gameplay_display_r4_c3"
+        app:layout_constraintStart_toEndOf="@+id/gameplay_display_r4_c3"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/gameplay_display_r4_c5"
+        style="@style/gameplay_grey"
+        android:layout_width="25sp"
+        android:layout_height="50sp"
+        android:layout_marginStart="50dp"
+        android:enabled="false"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/gameplay_display_r4_c3"
+        app:layout_constraintStart_toEndOf="@+id/gameplay_display_r4_c4"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <Button
+                android:id="@+id/gameplay_display_r3_c2"
+                style="@style/gameplay_grey"
+                android:layout_width="25sp"
+                android:layout_height="50sp"
+                android:layout_marginStart="50dp"
+                android:enabled="false"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/gameplay_display_r3_c1"
+                app:layout_constraintStart_toEndOf="@+id/gameplay_display_r3_c1"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/gameplay_display_r3_c3"
+                style="@style/gameplay_grey"
+                android:layout_width="25sp"
+                android:layout_height="50sp"
+                android:layout_marginStart="50dp"
+                android:enabled="false"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/gameplay_display_r3_c2"
+                app:layout_constraintStart_toEndOf="@+id/gameplay_display_r3_c2"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/gameplay_display_r3_c4"
+                style="@style/gameplay_grey"
+                android:layout_width="25sp"
+                android:layout_height="50sp"
+                android:layout_marginStart="50dp"
+                android:enabled="false"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/gameplay_display_r3_c2"
+                app:layout_constraintStart_toEndOf="@+id/gameplay_display_r3_c3"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/gameplay_display_r3_c5"
+                style="@style/gameplay_grey"
+                android:layout_width="25sp"
+                android:layout_height="50sp"
+                android:layout_marginStart="50dp"
+                android:enabled="false"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/gameplay_display_r3_c2"
+                app:layout_constraintStart_toEndOf="@+id/gameplay_display_r3_c4"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        <!--endregion Displays-->
+
+        <!--region Checks-->
+            <Button
+                android:id="@+id/gameplay_check_r3_c1"
+                style="@style/gameplay_grey"
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:enabled="false"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/gameplay_display_r3_c1"
+                app:layout_constraintStart_toEndOf="@+id/gameplay_display_r3_c1"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/gameplay_check_r4_c1"
+        style="@style/gameplay_grey"
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:enabled="false"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/gameplay_display_r4_c1"
+        app:layout_constraintStart_toEndOf="@+id/gameplay_display_r4_c1"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/gameplay_check_r4_c2"
+        style="@style/gameplay_grey"
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:enabled="false"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/gameplay_display_r4_c2"
+        app:layout_constraintStart_toEndOf="@+id/gameplay_display_r4_c2"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/gameplay_check_r4_c3"
+        style="@style/gameplay_grey"
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:enabled="false"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/gameplay_display_r4_c3"
+        app:layout_constraintStart_toEndOf="@+id/gameplay_display_r4_c3"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/gameplay_check_r4_c4"
+        style="@style/gameplay_grey"
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:enabled="false"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/gameplay_display_r4_c3"
+        app:layout_constraintStart_toEndOf="@+id/gameplay_display_r4_c4"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/gameplay_check_r4_c5"
+        style="@style/gameplay_grey"
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:enabled="false"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/gameplay_display_r4_c3"
+        app:layout_constraintStart_toEndOf="@+id/gameplay_display_r4_c5"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <Button
+                android:id="@+id/gameplay_check_r3_c2"
+                style="@style/gameplay_grey"
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:enabled="false"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/gameplay_display_r3_c2"
+                app:layout_constraintStart_toEndOf="@+id/gameplay_display_r3_c2"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/gameplay_check_r3_c3"
+                style="@style/gameplay_grey"
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:enabled="false"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/gameplay_display_r3_c2"
+                app:layout_constraintStart_toEndOf="@+id/gameplay_display_r3_c3"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/gameplay_check_r3_c4"
+                style="@style/gameplay_grey"
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:enabled="false"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/gameplay_display_r3_c2"
+                app:layout_constraintStart_toEndOf="@+id/gameplay_display_r3_c4"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/gameplay_check_r3_c5"
+                style="@style/gameplay_grey"
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:enabled="false"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/gameplay_display_r3_c2"
+                app:layout_constraintStart_toEndOf="@+id/gameplay_display_r3_c5"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        <!--endregion Checks-->
+
+    <!--endregion Row3-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mainmenu_bg">
+
+        <Button
+            android:id="@+id/highscore_back"
+            style="@style/mainmenu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="52dp"
+            android:fontFamily="@font/bowlby_one_sc"
+            android:text="@string/back"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/highscore_header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/francois_one"
+            android:text="@string/highscore"
+            android:textAlignment="center"
+            android:textColor="#8A2828"
+            android:textSize="75sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/highscore_holder"
+            android:layout_width="410dp"
+            android:layout_height="466dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/highscore_back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/highscore_header"
+            app:layout_constraintVertical_bias="1.0">
+
+            <Button
+                android:id="@+id/highscore_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="1"
+                android:enabled="false"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/francois_one"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:backgroundTint="@null"
+                tools:text="Score 1" />
+
+            <Button
+                android:id="@+id/highscore_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha=".75"
+                android:enabled="false"
+                android:focusableInTouchMode="false"
+                android:fontFamily="@font/francois_one"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                app:backgroundTint="@null"
+                tools:text="Score 1" />
+
+            <Button
+                android:id="@+id/highscore_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha=".75"
+                android:enabled="false"
+                android:focusableInTouchMode="false"
+                android:fontFamily="@font/francois_one"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                app:backgroundTint="@null"
+                tools:text="Score 1" />
+
+            <Button
+                android:id="@+id/highscore_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha=".75"
+                android:enabled="false"
+                android:focusableInTouchMode="false"
+                android:fontFamily="@font/francois_one"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                app:backgroundTint="@null"
+                tools:text="Score 1" />
+
+            <Button
+                android:id="@+id/highscore_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha=".75"
+                android:enabled="false"
+                android:focusableInTouchMode="false"
+                android:fontFamily="@font/francois_one"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:backgroundTint="@null"
+                tools:text="Score 1" />
+
+            <Button
+                android:id="@+id/highscore_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha=".75"
+                android:enabled="false"
+                android:focusableInTouchMode="false"
+                android:fontFamily="@font/francois_one"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                app:backgroundTint="@null"
+                tools:text="Score 1" />
+
+            <Button
+                android:id="@+id/highscore_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha=".75"
+                android:enabled="false"
+                android:focusableInTouchMode="false"
+                android:fontFamily="@font/francois_one"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                app:backgroundTint="@null"
+                tools:text="Score 1" />
+
+            <Button
+                android:id="@+id/highscore_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha=".75"
+                android:enabled="false"
+                android:focusableInTouchMode="false"
+                android:fontFamily="@font/francois_one"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                app:backgroundTint="@null"
+                tools:text="Score 1" />
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

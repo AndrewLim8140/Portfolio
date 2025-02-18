@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ViewFlipper
+        android:id = "@+id/flipperino"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inAnimation="@android:anim/fade_in"
+        >
+
+<!--        Login Screen-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".Passanger"
+            android:background="@drawable/ssb">
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="#488C1D1D"
+                android:text="@string/enter"
+                android:textColor="#08F6DE"
+                android:backgroundTint="#77000000"
+                android:textColorLink="#D11F1F"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/numpad_0" />
+
+            <Button
+                android:id="@+id/numpad_6"
+                style="@style/Widget.Material3.Button.ElevatedButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="40dp"
+                android:background="#CBFFFFFF"
+                android:backgroundTint="#77000000"
+                android:text="@string/_6"
+                android:textColor="#159E8F"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:iconTint="#923838"
+                app:layout_constraintStart_toEndOf="@+id/numpad_5"
+                app:layout_constraintTop_toTopOf="@+id/numpad_5"
+                tools:ignore="TextContrastCheck" />
+
+            <Button
+                android:id="@+id/numpad_1"
+                style="@style/Widget.Material3.Button.ElevatedButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="40dp"
+                android:background="#CBFFFFFF"
+                android:backgroundTint="#77000000"
+                android:text="@string/_1"
+                android:textColor="#159E8F"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:iconTint="#923838"
+                app:layout_constraintEnd_toStartOf="@+id/numpad_2"
+                app:layout_constraintTop_toBottomOf="@+id/numpad_4"
+                tools:ignore="TextContrastCheck" />
+
+            <Button
+                android:id="@+id/numpad_8"
+                style="@style/Widget.Material3.Button.ElevatedButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="40dp"
+                android:background="#CBFFFFFF"
+                android:backgroundTint="#77000000"
+                android:text="@string/_8"
+                android:textColor="#159E8F"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:iconTint="#923838"
+                app:layout_constraintBottom_toTopOf="@+id/numpad_5"
+                app:layout_constraintEnd_toEndOf="@+id/numpad_5"
+                tools:ignore="TextContrastCheck" />
+
+            <Button
+                android:id="@+id/numpad_7"
+                style="@style/Widget.Material3.Button.ElevatedButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="40dp"
+                android:background="#CBFFFFFF"
+                android:backgroundTint="#77000000"
+                android:text="@string/_7"
+                android:textColor="#159E8F"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:iconTint="#923838"
+                app:layout_constraintBottom_toTopOf="@+id/numpad_4"
+                app:layout_constraintEnd_toStartOf="@+id/numpad_8"
+                tools:ignore="TextContrastCheck" />
+
+            <Button
+                android:id="@+id/numpad_9"
+                style="@style/Widget.Material3.Button.ElevatedButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginBottom="40dp"
+                android:background="#CBFFFFFF"
+                android:backgroundTint="#77000000"
+                android:text="@string/_9"
+                android:textColor="#159E8F"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:iconTint="#923838"
+                app:layout_constraintBottom_toTopOf="@+id/numpad_6"
+                app:layout_constraintStart_toEndOf="@+id/numpad_8"
+                tools:ignore="TextContrastCheck" />
+
+            <Button
+                android:id="@+id/numpad_0"
+                style="@style/Widget.Material3.Button.ElevatedButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:background="#CBFFFFFF"
+                android:backgroundTint="#77000000"
+                android:text="@string/_0"
+                android:textColor="#159E8F"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:iconTint="#923838"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/numpad_2"
+                tools:ignore="TextContrastCheck" />
+
+            <Button
+                android:id="@+id/numpad_3"
+                style="@style/Widget.Material3.Button.ElevatedButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="40dp"
+                android:background="#CBFFFFFF"
+                android:backgroundTint="#77000000"
+                android:text="@string/_3"
+                android:textColor="#159E8F"
+                android:textColorLink="#8A5454"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:iconTint="#923838"
+                app:layout_constraintStart_toEndOf="@+id/numpad_2"
+                app:layout_constraintTop_toBottomOf="@+id/numpad_6"
+                tools:ignore="TextContrastCheck" />
+
+            <Button
+                android:id="@+id/numpad_5"
+                style="@style/Widget.Material3.Button.ElevatedButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="#CBFFFFFF"
+                android:backgroundTint="#77000000"
+                android:text="@string/_5"
+                android:textColor="#159E8F"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:iconTint="#923838"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TextContrastCheck" />
+
+            <Button
+                android:id="@+id/numpad_4"
+                style="@style/Widget.Material3.Button.ElevatedButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="40dp"
+                android:background="#CBFFFFFF"
+                android:backgroundTint="#77000000"
+                android:text="@string/_4"
+                android:textColor="#159E8F"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:iconTint="#923838"
+                app:layout_constraintEnd_toStartOf="@+id/numpad_5"
+                app:layout_constraintTop_toTopOf="@+id/numpad_5"
+                tools:ignore="TextContrastCheck" />
+
+            <Button
+                android:id="@+id/numpad_2"
+                style="@style/Widget.Material3.Button.ElevatedButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="40dp"
+                android:background="#CBFFFFFF"
+                android:backgroundTint="#77000000"
+                android:text="@string/_2"
+                android:textColor="#159E8F"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:iconTint="#923838"
+                app:layout_constraintEnd_toEndOf="@+id/numpad_5"
+                app:layout_constraintTop_toBottomOf="@+id/numpad_5"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/loginPassword"
+                android:layout_width="364dp"
+                android:layout_height="64dp"
+                android:layout_marginBottom="-100dp"
+                android:background="#B6000000"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#02DDFF"
+                android:textColorLink="#04FBFF"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/numpad_8"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.452"
+                tools:ignore="TextSizeCheck"
+                tools:text="Password field" />
+
+            <Button
+                android:id="@+id/loginReset"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                android:layout_width="92dp"
+                android:layout_height="43dp"
+                android:background="#7BFFFFFF"
+                android:text="@string/reset"
+                android:textColor="#36EBFA"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.95"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.023"
+                tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/deleteButton"
+                style="@style/Widget.Material3.MaterialTimePicker.Button"
+                android:layout_width="77dp"
+                android:layout_height="80dp"
+                android:layout_marginEnd="68dp"
+                android:layout_marginBottom="32dp"
+                android:background="#00FFFFFF"
+                android:gravity="center"
+                android:text="@string/backspace_symbol"
+                android:textAlignment="center"
+                android:textColor="#FF8100"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                android:alpha="0.0"
+                app:layout_constraintBottom_toTopOf="@+id/loginButton"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--        Passanger Screen-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/kms"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".Passanger"
+            android:background="@drawable/ssb">
+
+            <TextView
+                android:id="@+id/KMSText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="#00FFFFFF"
+                android:text="@string/saved_password"
+                android:textColor="#00F8DF"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/savedPass1"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                android:layout_width="287dp"
+                android:layout_height="81dp"
+                android:layout_marginTop="24dp"
+                android:background="#9008D1E6"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/create_password"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#90FFF7"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:iconTint="#1D1B20"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.266"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/KMSText"
+                tools:text="SavedPassword" />
+
+            <Button
+                android:id="@+id/savedPass2"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                android:layout_width="287dp"
+                android:layout_height="81dp"
+                android:layout_marginTop="20dp"
+                android:background="#9008D1E6"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/create_password"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#90FFF7"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.266"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/savedPass1"
+                tools:text="SavedPassword" />
+
+            <Button
+                android:id="@+id/savedPass3"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                android:layout_width="287dp"
+                android:layout_height="81dp"
+                android:layout_marginTop="20dp"
+                android:background="#9008D1E6"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/create_password"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#90FFF7"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.266"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/savedPass2"
+                tools:text="SavedPassword" />
+
+            <Button
+                android:id="@+id/savedPass4"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                android:layout_width="287dp"
+                android:layout_height="81dp"
+                android:layout_marginTop="20dp"
+                android:background="#9008D1E6"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/create_password"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#90FFF7"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.266"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/savedPass3"
+                tools:text="SavedPassword" />
+
+            <Button
+                android:id="@+id/savedPass5"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                android:layout_width="287dp"
+                android:layout_height="81dp"
+                android:layout_marginTop="20dp"
+                android:background="#9008D1E6"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/create_password"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#90FFF7"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.266"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/savedPass4"
+                tools:text="SavedPassword" />
+
+            <Button
+                android:id="@+id/editPass1"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="63dp"
+                android:layout_height="67dp"
+                android:background="#FFFFFF"
+                android:text="@string/edit"
+                android:textColor="#5EF1F4"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/savedPass1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/savedPass1"
+                app:layout_constraintTop_toTopOf="@+id/savedPass1" />
+
+            <Button
+                android:id="@+id/editPass2"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="63dp"
+                android:layout_height="67dp"
+                android:background="#FFFFFF"
+                android:text="@string/edit"
+                android:textColor="#5EF1F4"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/savedPass2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/savedPass1"
+                app:layout_constraintTop_toTopOf="@+id/savedPass2" />
+
+            <Button
+                android:id="@+id/editPass3"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="63dp"
+                android:layout_height="67dp"
+                android:background="#FFFFFF"
+                android:text="@string/edit"
+                android:textColor="#5EF1F4"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/savedPass3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/savedPass1"
+                app:layout_constraintTop_toTopOf="@+id/savedPass3" />
+
+            <Button
+                android:id="@+id/editPass4"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="63dp"
+                android:layout_height="67dp"
+                android:background="#FFFFFF"
+                android:text="@string/edit"
+                android:textColor="#5EF1F4"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/savedPass4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.428"
+                app:layout_constraintStart_toEndOf="@+id/savedPass1"
+                app:layout_constraintTop_toTopOf="@+id/savedPass4" />
+
+            <Button
+                android:id="@+id/editPass5"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="63dp"
+                android:layout_height="67dp"
+                android:background="#FFFFFF"
+                android:text="@string/edit"
+                android:textColor="#5EF1F4"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/savedPass5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.428"
+                app:layout_constraintStart_toEndOf="@+id/savedPass1"
+                app:layout_constraintTop_toTopOf="@+id/savedPass5" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--        Create Password-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/createNewPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".Passanger"
+            android:isScrollContainer="false"
+            android:background="@drawable/ssb"
+            >
+
+            <TextView
+                android:id="@+id/newPasswordText"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="200dp"
+                android:background="#89000000"
+                android:text="@string/create_password"
+                android:textAlignment="center"
+                android:textColor="#13FBC3"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/confirmPassword"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                android:layout_width="357dp"
+                android:layout_height="62dp"
+                android:layout_marginTop="20dp"
+                android:background="#51FFFFFF"
+
+                android:fontFamily="sans-serif-black"
+                android:text="@string/create_password"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#11BA93"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="@+id/createUser"
+                app:layout_constraintHorizontal_bias="0.481"
+                app:layout_constraintStart_toStartOf="@+id/createUser"
+                app:layout_constraintTop_toBottomOf="@+id/createPassword"
+                tools:text="CreatePassword" />
+
+            <EditText
+                android:id="@+id/createUser"
+                style="@style/Widget.Material3.AutoCompleteTextView.FilledBox"
+                android:layout_width="362dp"
+                android:layout_height="81dp"
+                android:layout_marginTop="20dp"
+                android:background="#B1000000"
+                android:ems="10"
+                android:hint="@string/username"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#07FBAE"
+                android:textColorHint="#07FAAD"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/createPassword"
+                app:layout_constraintStart_toStartOf="@+id/createPassword"
+                app:layout_constraintTop_toBottomOf="@+id/slotDescriptor" />
+
+            <EditText
+                android:id="@+id/slotDescriptor"
+                style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox"
+                android:layout_width="362dp"
+                android:layout_height="81dp"
+                android:layout_marginTop="16dp"
+                android:background="#B1000000"
+                android:ems="10"
+                android:hint="@string/name_max_15_chars"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:maxLength="15"
+                android:maxLines="1"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#07FBAE"
+                android:textColorHint="#07FAAD"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/createPassword"
+                app:layout_constraintHorizontal_bias="0.437"
+                app:layout_constraintStart_toStartOf="@+id/createPassword"
+                app:layout_constraintTop_toBottomOf="@+id/newPasswordText" />
+
+            <EditText
+                android:id="@+id/createPassword"
+                style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox"
+                android:layout_width="362dp"
+                android:layout_height="81dp"
+                android:layout_marginTop="20dp"
+                android:background="#B1000000"
+                android:ems="10"
+                android:hint="@string/password"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#07FBAE"
+                android:textColorHint="#07FAAD"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/newPasswordText"
+                app:layout_constraintHorizontal_bias="0.489"
+                app:layout_constraintStart_toStartOf="@+id/newPasswordText"
+                app:layout_constraintTop_toBottomOf="@+id/createUser"
+                tools:ignore="TextFields" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--        Display Saved Details-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ssb"
+            >
+
+            <Button
+                android:id="@+id/back"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="413dp"
+                android:layout_height="78dp"
+                android:layout_marginBottom="50dp"
+                android:background="@android:drawable/divider_horizontal_dark"
+                android:backgroundTint="#000000"
+                android:backgroundTintMode="add"
+                android:text="@string/back"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#FFCB00"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/showUsername"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="170dp"
+                android:background="#AE000000"
+                android:focusableInTouchMode="false"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/username"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:textColor="#00FFCA"
+                android:textColorHighlight="#000000"
+                android:textStyle="bold"
+                android:typeface="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/showPassword"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_below="@+id/displayUsername"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="30dp"
+                android:background="#AE000000"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/password"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:textColor="#00FFCA"
+                android:textStyle="bold"
+                android:typeface="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/displayUsername" />
+
+            <TextView
+                android:id="@+id/displayUsername"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:layout_below="@+id/showUsername"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="15dp"
+                android:background="#AE000000"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#D35C0E"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/showUsername"
+                tools:layout_editor_absoluteX="0dp"
+                tools:text="@string/saved_username" />
+
+            <TextView
+                android:id="@+id/displayPassword"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="15dp"
+                android:background="#AE000000"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#D35C0E"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/showPassword"
+                tools:text="@string/saved_password" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ViewFlipper>
+</androidx.constraintlayout.widget.ConstraintLayout>

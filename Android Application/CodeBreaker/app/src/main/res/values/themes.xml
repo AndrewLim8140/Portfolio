@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CodeBreaker" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+<!--    <style name="mainmenu" parent="android:style/Theme.NoTitleBar">-->
+<!--        <item name="android:buttonStyle">@style/mainmenu</item>-->
+<!--    </style>-->
+
+<!--    <style name="setting" parent="android:style/Theme.NoTitleBar">-->
+<!--        <item name="android:buttonStyle">@style/setting</item>-->
+<!--    </style>-->
+
+<!--    <style name="gameplay_red" parent="android:style/Theme.NoTitleBar">-->
+<!--        <item name="android:buttonStyle">@style/gameplay_red</item>-->
+<!--    </style>-->
+
+<!--    <style name="gameplay_blue" parent="android:style/Theme.NoTitleBar">-->
+<!--        <item name="android:buttonStyle">@style/gameplay_blue</item>-->
+<!--    </style>-->
+
+
+    <style name="Theme.CodeBreaker" parent="Base.Theme.CodeBreaker" />
+</resources>
